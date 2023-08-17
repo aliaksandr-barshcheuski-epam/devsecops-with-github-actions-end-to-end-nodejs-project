@@ -44,7 +44,7 @@ jobs:
       - name: ZAP Scan
         uses: zaproxy/action-baseline@v0.6.1
         env: 
-          ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: ${{ variables.ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION }}
+          ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
         with:
           docker_name: 'owasp/zap2docker-stable'
           target: 'http://example.com/'
